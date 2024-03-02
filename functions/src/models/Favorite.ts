@@ -1,10 +1,8 @@
 import { ObjectId } from "mongodb";
 
-export interface Cat {
-    id: string;
+interface Cat {
+  id: string;
     url: string;
-    name: string;
-    // categories?: Categories[]; 
 }
 
 export default interface Favorite {
@@ -12,7 +10,5 @@ export default interface Favorite {
   cat: Cat;
   userId?: string;
 }
-// export interface Categories {
-//     name: string;
-// }
+
 
